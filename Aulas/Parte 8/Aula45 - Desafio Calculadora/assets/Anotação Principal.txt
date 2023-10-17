@@ -1,0 +1,27 @@
+Passo a Passo do funcionamento da calculadora:
+
+1° Etapa: 
+1° Ação:
+Clique num botão de número;
+
+2° Receber o valor no input
+
+3°Ação
+	Validação:
+
+	Enquanto um botão de 		número for clicado; 
+
+	e nenhum botão de 		operação for clicado
+
+	 e outro botão de número 		for clicado. 
+
+3° Ação
+então  continue a colocar na caixa de texto o valor clicado.
+
+
+
+
+
+2° Etapa:
+Clicar na operação desejada
+Clicar no segundo número escolhido
