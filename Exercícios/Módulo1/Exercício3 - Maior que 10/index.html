@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Maior que 10</title>
+    </head>
+
+    <body>
+        <section>
+            <!-- <div>
+                
+            </div> -->
+            <input type="number" class="number" placeholder="Digite um valor">
+                <button onclick="verificar()">
+                    Verificar
+                </button>
+        </section>
+    </body>
+
+
+
+
+
+    <style>
+        section {
+            width: 45vw;
+            height: 20vh;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column;
+        }
+
+        /* div {
+            width: 50%;
+            background-color: yellow;
+        } */
+
+        input{
+            width: 50%;
+            height: 14%;
+            font-size: 70%;
+        }
+
+        button {
+            margin-top: .5em;
+            font-size: 70%;
+        }
+    </style>
+
+
+
+
+
+    <script>
+        function verificar() {
+            const number = document.querySelector(".number").value
+            number > 10 ? console.log(number) : console.log("O valor é menor que 10")
+        }
+    </script>
+
+</html>

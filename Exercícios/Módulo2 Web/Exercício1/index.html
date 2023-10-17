@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - GetElementById</title>
+</head>
+<body>
+    <section>
+        <h1 id="text-change">
+            Meu nome é Larissa, e sou técnica em informática para internet e programadora freelancer.
+        </h1>
+        <div>
+            <button class="mudar" onclick="mudar()">
+                Mudar
+            </button>
+
+            <button class="voltar" onclick="voltar()">
+                Voltar 
+            </button>
+        </div>
+    </section>
+</body>
+
+<style>
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mudar, .voltar {
+        margin-right: 2em;
+        width: 15em;
+        height: 2em;
+    }
+</style>
+
+<script>
+    function mudar() {
+        const paragraph = document.getElementById("text-change")
+        paragraph.innerHTML = "Hello Word"
+    }
+
+    function voltar() {
+        const paragraph = document.getElementById("text-change")
+        paragraph.innerHTML = "Meu nome é Larissa, e sou técnica em informática para internet e programadora freelancer."
+    }
+</script>
+</html>

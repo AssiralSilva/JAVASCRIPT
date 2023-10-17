@@ -1,0 +1,1 @@
+console.log("Você está linda") /*ctrl + alt + n  --> Roda o javascript pelo Code Runner */
