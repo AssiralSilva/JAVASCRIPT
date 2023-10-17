@@ -38,11 +38,7 @@ h1 {
     display: flex;
     justify-content: center;
     padding-bottom: .5em;
-}
-
-.empty {
-    border-bottom: solid 1px grey;
-    width: 90%;
+    width: 100%;
 }
 
 .keys-box {
@@ -54,8 +50,8 @@ h1 {
 }
 
 .numbers-box {
-    width: 50%;
-    height: 36vh;
+    width: 70%;
+    height: 33vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,24 +59,56 @@ h1 {
 
 #numbers-values {
     width: 100%;
-    height: 36vh;
+    height: 33vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #numbers-values div {
     margin-top: 1.5em;
+    width: 94%;
+    margin-left: .4em;
 }
 
 .numbers-values {
-    width: 1.2em;
+    width: 1.3em;
     height: 6vh;
     font-size: 1.5em;
     border-radius: 10px;
+    margin-right: .2em;
 }
 
 .signals-box {
     width: 50%;
-    height: 36vh;
+    height: 33vh;
     background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#signals-box {
+    width: 100%;
+    height: 85%;
+    padding-top: .5em;
+}
+
+.signals {
+    width: 85%;
+    margin-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signals button{
+    width: 47%;
+    height: 2.5em;
+    font-size: 1em;
+    font-weight: 900;
+    border-radius: 10px;
 }
 
 .reset-box {
@@ -95,4 +123,6 @@ h1 {
     height: 6vh;
     font-size: 1.8em;
     border-radius: 10px;
+    margin-top: 1em;
 }
+
