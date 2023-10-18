@@ -15,7 +15,7 @@ Clique num botão de número;
 
 	 e outro botão de número 		for clicado. 
 
-3° Ação
+4° Ação
 então  continue a colocar na caixa de texto o valor clicado.
 
 
