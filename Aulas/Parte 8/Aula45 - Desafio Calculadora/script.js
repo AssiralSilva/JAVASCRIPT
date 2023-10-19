@@ -13,14 +13,18 @@ let divisao = document.querySelector("#divisao")
 let mult = document.querySelector("#mult")
 let soma = document.querySelector("#soma")
 let sub = document.querySelector("#sub")
+let equalButton = document.querySelector("#equal") 
+const voltar = document.querySelector(".back")
 let visorResult = document.querySelector(".visor-box")
 let visorValue = "";
+let calculo = "";
 
 let buttonReset = document.querySelector(".reset-button")
 
 function adicionarNumero(numero) {
-    visorValue += numero;
-    visorResult.value = visorValue;
+    visorValue = visorResult.value
+    visorResult.value = visorValue + numero
+    return visorResult.value
 }
 
 n1.addEventListener("click", () => {
@@ -69,11 +73,11 @@ dot.addEventListener("click", () => {
 })
 
 divisao.addEventListener("click", () => {
-    adicionarNumero("÷")
+    adicionarNumero("/")
 })
 
 mult.addEventListener("click", () => {
-    adicionarNumero("×")
+    adicionarNumero("*")
 })
 
 soma.addEventListener("click", () => {
@@ -84,7 +88,23 @@ sub.addEventListener("click", () => {
     adicionarNumero("-")
 })
 
+voltar.addEventListener("click", () => {
+    let finalResult = visorResult.value
+    visorResult.value = finalResult.substring(0, finalResult.length -1)
+    if(visorResult.value == "") {
+        visorResult.value = ""
+    }
+})
+
+equalButton.addEventListener("click", () => {
+    var resultado = visorResult.value
+    if(resultado) { 
+        visorResult.value = eval(resultado);
+    }
+})
+
 buttonReset.addEventListener("click", () => {
     visorValue = "";
     visorResult.value = "";
 })
+
