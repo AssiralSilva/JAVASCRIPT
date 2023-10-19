@@ -8,21 +8,21 @@
 const variavel = "abacatinho"
 console.log(variavel)
 
-function nomeNaTela() {
+function nomeNaTela() { //tipo void, não tem retorno
     console.log("Rodolfo")
 } // Não foi chamado
 
 
-function sayMyName(name) {
+function sayMyName(name) { // void
     console.log(`O nome é ${name}`)
 }
 
 sayMyName("Rodolfo")
 sayMyName("Aline")
 sayMyName("Paulo")
-sayMyName("Maria") // Como a função pode ser chamada varia vezes no código então todas as vezes em que é chamada mesmo que com novas atribuições de nomes elas aparecem cada uma com sua respectiva atribuição.
+sayMyName("Maria") // Como a função pode ser chamada várias vezes no código então todas as vezes em que é chamada mesmo que com novas atribuições de nomes elas aparecem cada uma com sua respectiva atribuição.
 
-function banana(value, value2, value3, value4) {
+function banana(value, value2, value3, value4) { //void
     console.log(value + value2 + value3 + value4)
 }
 
@@ -44,7 +44,7 @@ Fazer uma calculadora
 // }
 
 // function banana(value, value2) {
-//     sub(value, value2)
+//     sub(value, value2) // chamando a função sub *********
 // }
 
 
@@ -53,12 +53,12 @@ Fazer uma calculadora
 
 // Exemplo
 
-function sayMyName2(name = "Rodolfo") {
+function sayMyName2(name = "Rodolfo") { //void
     console.log(name)
 }
 sayMyName2() // Aqui o que valeu foi o nome pré-definido. Já que ela não recebeu novas mudanças na variável name.
 
-function sayMyName3(name = "Rodolfo") {
+function sayMyName3(name = "Rodolfo") { //void
     console.log(name)
 }
 sayMyName3("Aline")// Já aqui o que valeu foi o nome definido posteriormente. Já que ela recebeu novas mudanças na variável name depois, ao ser chamada.
