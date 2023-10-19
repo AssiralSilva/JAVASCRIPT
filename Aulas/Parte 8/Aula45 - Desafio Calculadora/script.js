@@ -8,6 +8,11 @@ let n7 = document.querySelector(".n7")
 let n8 = document.querySelector(".n8")
 let n9 = document.querySelector(".n9")
 let nzero = document.querySelector("#zero")
+let dot = document.querySelector("#dot")
+let divisao = document.querySelector("#divisao")
+let mult = document.querySelector("#mult")
+let soma = document.querySelector("#soma")
+let sub = document.querySelector("#sub")
 let visorResult = document.querySelector(".visor-box")
 let visorValue = "";
 
@@ -59,7 +64,27 @@ nzero.addEventListener("click", () => {
     adicionarNumero(0)
 })
 
+dot.addEventListener("click", () => {
+    adicionarNumero(".")
+})
 
-// buttonReset.addEventListener("click", () => {
-//     visorResult.value = "";
-// })
+divisao.addEventListener("click", () => {
+    adicionarNumero("÷")
+})
+
+mult.addEventListener("click", () => {
+    adicionarNumero("×")
+})
+
+soma.addEventListener("click", () => {
+    adicionarNumero("+")
+})
+
+sub.addEventListener("click", () => {
+    adicionarNumero("-")
+})
+
+buttonReset.addEventListener("click", () => {
+    visorValue = "";
+    visorResult.value = "";
+})
