@@ -65,10 +65,10 @@ p {
     color: #29834d;
 }
 
-.your-score{
+#human-score{
 color: rgb(77, 128,216);
 }
 
-.machine-score {
+#machine-score {
     color: rgb(244, 71, 15);
 }

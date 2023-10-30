@@ -21,16 +21,21 @@ console.log(sayMyName('Rodolfo'))
 // Arrow function:
 // Obs.: Normalmente ela fica dentro de uma variável, posso colocar parâmetros normalmente e além disso:
 // ** Se a arrow functin tiver apenas uma única linha então não precisamos colocar um return, porque ela já terá **
+
+const sum = (number1,number2) => number1 + number2
+console.log(sum(2,3))
+
+const sayMyName3 = name => `Seu nome é ${name}` 
+console.log(sayMyName3('Larissa'))
+
 const sayMyName2 = (name, age) => {
     `Seu nome é ${name, age}`
 } // Posso ter mais de um parâmetro
 console.log("Nico, Idade:", `${10} anos`)
 
-const sayMyName3 = name => `Seu nome é ${name}` 
-console.log(sayMyName3('Larissa'))
 
-const sum = (number1,number2) => number1 + number2
-console.log(sum(2,3))
+
+
 
 
 
