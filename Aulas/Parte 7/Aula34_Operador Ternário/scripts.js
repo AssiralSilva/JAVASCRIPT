@@ -50,6 +50,25 @@ const salary3 = 10000
 
 salary3 < 3000 ? console.log("O colaborador é júnior") : salary3 >= 3000 && salary3 < 10000 ? console.log("O colaborador é sênior") : console.log("Ele é diretor") //*************************** */
 
+/*
+Quebrando o exemplo acima para melhor entendimento:
+
+if
+condição:           salary3 < 3000 ? 
+
+Resposta do if:     console.log("O colaborador é júnior") 
+
+else if
+condição:           : salary3 >= 3000 && salary3 < 10000 ? 
+
+Resposta do if:     console.log("O colaborador é sênior") 
+
+: console.log("Ele é diretor")
+
+
+O simbolo de if ternário ====>  ? sempre ao fim da condição
+*/
+
 
 
 
